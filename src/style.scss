@@ -131,6 +131,7 @@ table {
 // Non-Default Styles
 
 $white: #eaeaea;
+$grey: grey;
 
 body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -149,20 +150,18 @@ body {
 	display: flex;
 	grid-template-columns: 1fr 5fr;
 	justify-content: space-between;
+	align-items: flex-end;
 
 	font-size: 3rem;
 
-	border-bottom: 3px solid grey;
+	border-bottom: 3px solid $grey;
 }
 
 .header-name {
 	display: flex;
 	flex-direction: column;
 
-	margin: 1rem;
-	margin-left: 2rem;
-	font-size: 3rem;
-
+	margin: 1rem 0 0 2rem;
 	font-weight: 500;
 	line-height: 1.2;
 }
@@ -188,10 +187,11 @@ body {
 
 	div {
 		transition: transform 0.3s;
+		padding-bottom: 2px;
 	}
 
 	div:hover {
-		border-top: 3px solid grey;
+		border-top: 3px solid $grey;
 
 		transform: translateY(-5px);
 	}
