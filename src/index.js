@@ -1,1 +1,3 @@
-console.log('Testing 123 ');
+import './style.scss';
+
+console.log('Testing 12345 ');
