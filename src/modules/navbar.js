@@ -7,9 +7,9 @@ export default function insertNavbar() {
         <!-- <div>and</div> -->
         <div>
             Whiskers
-            <br />
+          
             and
-            <br />
+           
             Treats
         </div>
     </div>
@@ -22,9 +22,9 @@ export default function insertNavbar() {
     </div>
     <div class="header-name hidden">
         Whiskers
-        <br />
+        
         and
-        <br />
+       
         Treats
     </div>
 </div>
