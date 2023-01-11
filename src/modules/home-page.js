@@ -1,6 +1,6 @@
 export default function createHomePage() {
 	document.querySelector('#container').insertAdjacentHTML(
-		'afterbegin',
+		'beforeend',
 		`
     <div class='content'>
 		<div class='background-image'></div>
@@ -30,6 +30,6 @@ export default function createHomePage() {
 				</div>
 			</div>
 		</div>
-	</div>;`
+	</div>`
 	);
 }

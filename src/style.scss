@@ -138,6 +138,8 @@ body {
 		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	box-sizing: border-box;
 	background-color: $white;
+
+	overflow-y: scroll;
 }
 
 #container {
@@ -164,11 +166,11 @@ body {
 
 	div {
 		display: flex;
-		height: fit-content;
+		// height: fit-content;
 		font-size: 1.875rem;
 
 		transition: transform 0.3s ease-out;
-		// padding-bottom: 12px;
+		padding-bottom: 12px;
 
 		cursor: pointer;
 
@@ -194,20 +196,29 @@ body {
 		width: 100%;
 		// z-index: 1;
 		background: url(./images/funny-cat.jpg) no-repeat center fixed;
-		background-size: cover;
+		background-position: 50% 40%;
+		// overflow: hidden;
 		filter: grayscale(40%) blur(0px);
 		z-index: -1;
 	}
 }
 
 .home-container {
+	position: fixed;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 10rem;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #eaeaea;
 
-	height: 70%;
+	height: fit-content;
 	width: min(50vw, 512px);
 
 	border-radius: $border-radius;
@@ -239,6 +250,10 @@ body {
 		h2 {
 			font-size: 2.25rem;
 		}
+	}
+
+	> * {
+		margin: 1rem 0;
 	}
 }
 
@@ -291,13 +306,15 @@ body {
 	right: 0;
 	top: 10rem;
 
+	margin-bottom: 10rem;
+
 	// display: inline-block;
 	// flex-direction: column;
 	// justify-content: space-around;
 	// align-items: center;
 	background-color: #eaeaea;
 
-	// height: fit-content;
+	height: fit-content;
 	width: min(50vw, 512px);
 
 	border-radius: $border-radius;
