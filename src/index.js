@@ -1,6 +1,6 @@
 import './style.scss';
 import insertNavbar from './modules/navbar';
-import createHomePage from './modules/home-page';
+// import createHomePage from './modules/home-page';
 
 insertNavbar();
-createHomePage();
+// createHomePage();

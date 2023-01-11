@@ -141,13 +141,16 @@ body {
 }
 
 #container {
-	display: grid;
-	grid-template-rows: 64px 1fr;
-	height: 100vh;
+	// display: grid;
+	// grid-template-rows: 64px 1fr;
+	// height: 100vh;
 }
 
 .nav {
-	grid-row: 1 /2;
+	position: fixed;
+	width: 100vw;
+	height: 64px;
+	grid-row: 1 / 2;
 
 	display: flex;
 	justify-content: center;
@@ -157,7 +160,7 @@ body {
 
 	// box-shadow: 0 2px 10px hsl(50, 0%, 50%);
 	background-color: #eaeaea;
-	// border-bottom: 5px solid black;
+	box-shadow: 0 3px 3px hsl(50, 0%, 50%, 0.5);
 
 	div {
 		display: flex;
@@ -165,12 +168,12 @@ body {
 		font-size: 1.875rem;
 
 		transition: transform 0.3s ease-out;
-		padding-bottom: 2px;
+		// padding-bottom: 12px;
 
 		cursor: pointer;
 
 		&:hover {
-			border-bottom: 3px solid black;
+			border-bottom: 3px solid hsl(50, 0%, 30%);
 
 			transform: translateY(-5px);
 		}
@@ -178,16 +181,18 @@ body {
 }
 
 .content {
-	display: flex;
+	// display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	height: 100vh;
 
 	.background-image {
 		position: fixed;
 		height: 100%;
 		width: 100%;
-		z-index: 1;
+		// z-index: 1;
 		background: url(./images/funny-cat.jpg) no-repeat center fixed;
 		background-size: cover;
 		filter: grayscale(40%) blur(0px);
@@ -272,6 +277,72 @@ body {
 				font-size: 1.5rem;
 				margin-bottom: 8px;
 			}
+		}
+	}
+}
+
+// Menu
+.menu-container {
+	position: absolute;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 10rem;
+
+	// display: inline-block;
+	// flex-direction: column;
+	// justify-content: space-around;
+	// align-items: center;
+	background-color: #eaeaea;
+
+	// height: fit-content;
+	width: min(50vw, 512px);
+
+	border-radius: $border-radius;
+	border: 2px solid grey;
+
+	padding: 3rem;
+}
+
+.food-container {
+	.food-title {
+		width: fit-content;
+		font-size: 2.25rem;
+		margin-bottom: 1rem;
+		border-bottom: 2px solid black;
+	}
+
+	&:first-child {
+		margin-bottom: 3rem;
+	}
+}
+
+.food-grid {
+	height: inherit;
+	width: inherit;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+	gap: 2rem;
+
+	.food {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: baseline;
+		// border: 2px solid grey;
+		border-radius: $border-radius;
+		padding: 0.75rem 1rem;
+		min-height: 96px;
+		// min-height: 200px;
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		> * {
+			margin: 0.5rem 0;
 		}
 	}
 }
