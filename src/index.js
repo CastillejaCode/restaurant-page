@@ -9,6 +9,11 @@ createHomePage();
 
 document.querySelectorAll('.navs').forEach((element) => {
 	element.addEventListener('click', () => {
+		document
+			.querySelectorAll('.navs')
+			.forEach((ele) => ele.classList.remove('toggle'));
+		element.classList.add('toggle');
+
 		if (element.textContent === 'Home') {
 			document.querySelector('.content').remove();
 			// insertNavbar();
