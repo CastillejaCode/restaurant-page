@@ -2,6 +2,7 @@ import './style.scss';
 import insertNavbar from './modules/navbar';
 import createHomePage from './modules/home-page';
 import createMenu from './modules/menu';
+import createAboutPage from './modules/about';
 // import createHomePage from './modules/home-page';
 
 insertNavbar();
@@ -22,6 +23,10 @@ document.querySelectorAll('.navs').forEach((element) => {
 		if (element.textContent === 'Menu') {
 			document.querySelector('.content').remove();
 			createMenu();
+		}
+		if (element.textContent === 'About') {
+			document.querySelector('.content').remove();
+			createAboutPage();
 		}
 	});
 });

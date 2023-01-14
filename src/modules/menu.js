@@ -42,7 +42,7 @@ export default function createMenu() {
             </div>
         </div>
         <div class="food-container">
-            <div class="food-title">Pastries</div>
+            <div class="food-title">Sweets</div>
             <div class="food-grid">
                 <div class="food">
                     <h1>Chocolate Kitty Paws</h1>
@@ -51,7 +51,7 @@ export default function createMenu() {
                 </div>
                 <div class="food">
                     <h1>Sweet Tooth Tails</h1>
-                    <p>Churros topped with cane sugar.</p>
+                    <p>Churros topped with cane sugar</p>
                     <p>$4</p>
                 </div>
                 <div class="food">
@@ -61,22 +61,23 @@ export default function createMenu() {
                 </div>
                 <div class="food">
                     <h1>Catnip Matcha Beans</h1>
-                    <p>Doughnuts holes with sprinkled matcha.</p>
+                    <p>Doughnuts holes with sprinkled matcha</p>
                     <p>$7</p>
                 </div>
                 <div class="food">
                     <h1>Cheesy Bread</h1>
-                    <p>Brioche bread with hard cheddar melted inside.</p>
+                    <p>Brioche bread with hard cheddar melted inside</p>
                     <p>$7</p>
                 </div>
                 <div class="food">
                     <h1>Jello</h1>
-                    <p>Jello.</p>
+                    <p>Jello</p>
                     <p>$3</p>
                 </div>
             </div>
+           
         </div>
-    </div>
+        </div>
 </div>`
 	);
 }
