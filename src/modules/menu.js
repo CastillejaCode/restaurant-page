@@ -1,5 +1,5 @@
 export default function createMenu() {
-	document.querySelector('#container').insertAdjacentHTML(
+	document.querySelector('body').insertAdjacentHTML(
 		'beforeend',
 		`<div class="content">
     <div class="background-image"></div>

@@ -1,5 +1,5 @@
 export default function createHomePage() {
-	document.querySelector('#container').insertAdjacentHTML(
+	document.querySelector('body').insertAdjacentHTML(
 		'beforeend',
 		`
     <div class='content'>

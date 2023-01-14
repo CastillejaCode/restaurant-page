@@ -30,3 +30,7 @@ document.querySelectorAll('.navs').forEach((element) => {
 		}
 	});
 });
+
+document.querySelector('body').addEventListener('click', (e) => {
+	console.log(e.target);
+});

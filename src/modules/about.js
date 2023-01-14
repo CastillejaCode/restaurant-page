@@ -1,5 +1,5 @@
 export default function createAboutPage() {
-	document.querySelector('#container').insertAdjacentHTML(
+	document.querySelector('body').insertAdjacentHTML(
 		'beforeend',
 		`
     <div class="content">
@@ -37,6 +37,10 @@ export default function createAboutPage() {
                     </a>
                 </p>
             </div>
+        </div>
+        <div class="credit">
+            <h1>Photo by <a href="https://unsplash.com/es/@rebaspike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reba Spike</a> on <a href="https://unsplash.com/photos/xxIyFBpcDuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></h1>
+        
         </div>
     </div>
 </div>
