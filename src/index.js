@@ -17,7 +17,7 @@ document.querySelectorAll('.navs').forEach((element) => {
 
 		if (element.textContent === 'Home') {
 			document.querySelector('.content').remove();
-			// insertNavbar();
+
 			createHomePage();
 		}
 		if (element.textContent === 'Menu') {
@@ -32,5 +32,13 @@ document.querySelectorAll('.navs').forEach((element) => {
 });
 
 document.querySelector('body').addEventListener('click', (e) => {
-	console.log(e.target);
+	// console.log(e.target.classList.value);
+	if (e.target.classList.value === 'order') {
+		document
+			.querySelectorAll('.navs')
+			.forEach((e) => e.classList.remove('toggle'));
+		document.querySelector('.nav-2').classList.add('toggle');
+		document.querySelector('.content').remove();
+		createMenu();
+	}
 });

@@ -31,7 +31,7 @@ export default function createAboutPage() {
                 <h1>Location</h1>
                 <p>
                     <a
-                        href="https://www.google.com/maps/place/Ao+Island/@33.7357533,132.4788776,16z/data=!3m1!4b1!4m5!3m4!1s0x3545615a1e5be903:0xa6a816cd520f72b0!8m2!3d33.7357118!4d132.4816635"
+                        target=" " href="https://www.google.com/maps/place/Ao+Island/@33.7357533,132.4788776,16z/data=!3m1!4b1!4m5!3m4!1s0x3545615a1e5be903:0xa6a816cd520f72b0!8m2!3d33.7357118!4d132.4816635"
                     >
                         Nagahamacho Aoshima, Ozu, Ehime 799-3470, Japan
                     </a>
@@ -39,9 +39,13 @@ export default function createAboutPage() {
             </div>
         </div>
         <div class="credit">
-            <h1>Photo by <a href="https://unsplash.com/es/@rebaspike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reba Spike</a> on <a href="https://unsplash.com/photos/xxIyFBpcDuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></h1>
+            <h1>Photo by <a target=" " href="https://unsplash.com/es/@rebaspike?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reba Spike</a> on <a target=" " href="https://unsplash.com/photos/xxIyFBpcDuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></h1>
         
         </div>
+        <div class="credit">
+        <h1>Website by <a target=" " href="https://github.com/CastillejaCode/restaurant-page">Julian Krzysiak</a></h1>
+    
+    </div>
     </div>
 </div>
     `
